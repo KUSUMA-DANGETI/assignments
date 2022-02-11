@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+File *f;
+int n,i;
+char c;
+char ch[10];
+printf("enter file");
+scanf("%s",&ch);
+f=fopen("rrr.txt","r");
+c=fgetc(f);
+while(c!=EOF)
+{
+printf("%c",c);
+c=getc(f);
+}
+fclose(f);
+return 0;
+}
